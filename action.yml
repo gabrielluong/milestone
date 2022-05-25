@@ -1,0 +1,9 @@
+name: 'Milestone'
+description: 'Tags a merged issue with the current milestone when closed by the specified closed-by login.'
+inputs:
+  github-token:
+    required: true
+    description: 'A GitHub access token with write access to the project.'
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
